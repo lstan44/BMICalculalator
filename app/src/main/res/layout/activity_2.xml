@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity2">
+
+    <TextView
+        android:id="@+id/reportBmi"
+        android:layout_width="381dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="12dp"
+        android:fontFamily="sans-serif-black"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/reportComment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reportTitle" />
+
+    <TextView
+        android:id="@+id/reportTitle"
+        android:layout_width="383dp"
+        android:layout_height="143dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="sans-serif-black"
+        android:textAlignment="viewStart"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/reportBmi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/reportComment"
+        android:layout_width="379dp"
+        android:layout_height="144dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="sans-serif-black"
+        android:textAlignment="viewStart"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reportBmi" />
+</android.support.constraint.ConstraintLayout>
